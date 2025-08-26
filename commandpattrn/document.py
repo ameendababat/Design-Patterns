@@ -2,7 +2,6 @@
 
 class Document:
     """Receiver """
-    
     def __init__(self):
         self.text = ""
 
@@ -14,7 +13,6 @@ class Document:
     def delete_text(self, doc=1):
         if self.text:
             self.text = self.text[:-doc]
-            
 
 
     def __str__(self):

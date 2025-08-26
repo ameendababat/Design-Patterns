@@ -12,5 +12,6 @@ def main():
     for char in characters:
         char.render()
 
+
 if __name__ == "__main__":
     main()

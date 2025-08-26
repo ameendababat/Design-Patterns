@@ -2,14 +2,13 @@ from ordermemento import OrderMemento
 
 
 class OrderCaretaker:
-    
     def __init__(self):
         self.undo_stack = []
         self.redo_stack = []
 
 
     def save(self, order):
-        self.undo_stack.append((order,OrderMemento(order.status)))
+        self.undo_stack.append((order, OrderMemento(order.status)))
         self.redo_stack.clear()
     
     

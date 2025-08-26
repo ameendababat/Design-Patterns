@@ -1,5 +1,6 @@
+from abc import ABC, abstractmethod
 
 
-class Observer:
-    
+class Observer(ABC):
+    @abstractmethod
     def update(self, user, filename):pass

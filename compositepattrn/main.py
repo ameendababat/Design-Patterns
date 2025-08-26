@@ -6,7 +6,6 @@ def main():
     """Dealing with a single object or a group of objects (composite) like tree data structure"""
     r1 = Rectangle()
     r2 = Rectangle()
-    
     g1 = Group()
     g1.add_item(r1)
     g1.add_item(r2)

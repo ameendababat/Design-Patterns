@@ -2,7 +2,6 @@ import json
 
 
 class Configuration:
-    
     __instance = None
     __config_data = None
     
@@ -23,9 +22,6 @@ class Configuration:
         return self.__config_data
 
 
-def load_config():
-    return Configuration().get_config()
-
-
-
-
+    @staticmethod
+    def load_config():
+        return Configuration().get_config()

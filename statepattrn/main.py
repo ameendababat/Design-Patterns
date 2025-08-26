@@ -13,7 +13,7 @@ def main():
     hasmoneystate.eject_coin()
     dispensingstate = DispensingState(vending_machine)
     dispensingstate.finish_dispensing()
-    
-    
+
+
 if __name__ == "__main__":
     main()

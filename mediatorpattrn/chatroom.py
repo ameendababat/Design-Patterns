@@ -5,12 +5,10 @@ class ChatRoom:
     def __init__(self):
         self.users = []
 
-    
+
     def register(self, user):
-        
         self.users.append(user)
         user.chatroom = self
-        
 
 
     def broadcast(self, message, sender):

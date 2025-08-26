@@ -1,7 +1,6 @@
 
 
 class User:
-    
     def __init__(self, name):
         self.name = name
         self.chatroom = None
@@ -17,7 +16,7 @@ class User:
 
     def receive(self, message, sender):
         print(f"{self.name} received from {sender}: {message}")
-        
-        
+
+
     def __str__(self):
         return self.name

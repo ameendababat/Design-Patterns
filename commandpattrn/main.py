@@ -4,6 +4,7 @@ from typetextcommand import TypeTextCommand
 from deletetextcommand import DeleteTextCommand
 from macrocommand import MacroCommand
 
+
 def main():
     """Undo/Redo Functionality is Required
     """
@@ -16,7 +17,7 @@ def main():
     manager.execute_command(cmd2)
     
     cmd3 = DeleteTextCommand(doc)
-    manager.execute_command(cmd3)
+    manager.execute_command(cmd3)#Hallo wor
     
     print(doc)
     

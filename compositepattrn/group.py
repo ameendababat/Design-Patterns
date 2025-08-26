@@ -4,7 +4,6 @@ from shape import Shape
 class Group:
     """Composite"""
     def __init__(self):
-        
         self.items = []
 
 

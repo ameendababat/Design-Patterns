@@ -2,15 +2,15 @@ from drawingmemento import DrawingMemento
 
 
 class Drawing:
-    """Originator """
+    """Originator"""
     def __init__(self):
         self.__shapes = []
-    
-    
+
+
     def add_shape(self, shape):
         self.__shapes.append(shape)
-    
-    
+
+
     def create_memento(self):
         return DrawingMemento(self.__shapes)
 
