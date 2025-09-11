@@ -4,15 +4,15 @@ from order import Order
 
 
 def main():
-    
+    """Facade pattrn and command and observer and memento and strategy pattrn"""
     user = User('Bob')
     order = Order(1001, user)
     system = OrderSystem()
     system.place_order(order)
     system.change_status(order, "Shipped")
-
     system.undo()
     system.redo()
+
 
 if __name__ == "__main__":
     main()

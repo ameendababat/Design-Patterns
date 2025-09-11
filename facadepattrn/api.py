@@ -1,7 +1,5 @@
 
 
 class API:
-    
     def call(self):
-        print(f"Calling external API...")
-        
+        print(f"Calling external API")

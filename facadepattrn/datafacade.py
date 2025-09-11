@@ -4,7 +4,7 @@ from api import API
 
 
 class DataFacade:
-    """Facade"""
+    """Facade pattrn"""
     def __init__(self):
         self.__cache = Cache()
         self.__db = DB()

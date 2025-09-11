@@ -2,7 +2,6 @@ from state import State
 
 
 class IdleState(State):
-    
     def __init__(self, machine):
         self.machine = machine
 
@@ -18,5 +17,3 @@ class IdleState(State):
 
     def select_item(self):
         print("Insert coin first.")
-
-

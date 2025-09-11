@@ -2,7 +2,6 @@ from command import Command
 
 
 class DeleteTextCommand(Command):
-    
     def __init__(self, document):
         self.document = document
         self.deleted = ""

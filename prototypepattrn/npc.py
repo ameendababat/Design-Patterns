@@ -1,5 +1,5 @@
-from prototype import Prototype
 import copy 
+from prototype import Prototype
 
 
 class NPC(Prototype):

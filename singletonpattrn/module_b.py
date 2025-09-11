@@ -1,6 +1,6 @@
-from configuration import load_config
+from configuration import Configuration
 
 
 def run_b():
-    config = load_config()
+    config = Configuration.load_config()
     print("Module B running with:", config["name"])

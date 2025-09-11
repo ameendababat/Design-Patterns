@@ -3,7 +3,6 @@ from observer import Observer
 
 
 class System(Subject):
-    
     def __init__(self):
         self.__observers = []
     

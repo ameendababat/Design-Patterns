@@ -2,7 +2,6 @@ from state import State
 
 
 class HasMoneyState(State):
-    
     def __init__(self, machine):
         self.machine = machine
 

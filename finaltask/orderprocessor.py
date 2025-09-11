@@ -5,7 +5,7 @@ import time
 
 
 class OrderProcessor:
-    """subject opserver"""
+    """Subject opserver"""
     def __init__(self, logger:LoggerStrategy):
         self.opservers = []
         self.logger = logger
@@ -13,10 +13,9 @@ class OrderProcessor:
     
     
     def add_opserver(self, observer:NotificationOpserver):
-        
         self.opservers.append(observer)
-    
-    
+
+
     def notify(self, order):
         for ops in self.opservers:
             ops.update(order)
@@ -28,18 +27,18 @@ class OrderProcessor:
         order.status = "processed"
         self.logger.log(f"Order {order.order_id} Processed")
         self.notify(order)
-    
-    
+
+
     def _internal_change_status(self, order, new_status):
         self.caretaker.save(order)
         order.status = new_status
         self.logger.log(f"Order {order.order_id} status changed to {new_status}")
         self.notify(order)
-    
-    
+
+
     def undo_status(self):
         self.caretaker.undo()
-    
-    
+
+
     def redo_status(self):
         self.caretaker.redo()

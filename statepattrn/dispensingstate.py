@@ -2,13 +2,12 @@ from state import State
 
 
 class DispensingState(State):
-    
     def __init__(self, machine):
         self.machine = machine
 
 
     def insert_coin(self):
-        print("Wait.... dispensing item")
+        print("Wait...dispensing item")
 
 
     def eject_coin(self):

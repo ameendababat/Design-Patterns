@@ -7,16 +7,14 @@ from linuxscrollbar import LinuxScrollbar
 
 
 class LinuxFactory(FactoryWidgets):
-    
     def create_button(self)->Button:
         return LinuxButton()
-    
-    
+
+
     def create_scrollbar(self)->ScrollBar:
         return LinuxScrollbar()
-    
-    
+
+
     def create_menu(self)->Menu:
-        print("Menu is not supported on Linux. ")
+        print("Menu is not supported on Linux")
         return None
-        

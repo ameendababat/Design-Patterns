@@ -4,14 +4,13 @@ from dispensingstate import DispensingState
 
 
 class VendingMachine:
-    
     def __init__(self):
         self.idl_state = IdleState(self)
         self.has_money_state = HasMoneyState(self)
         self.dispensing_state = DispensingState(self)
         self.state = IdleState(self)
-        
-        
+
+
     def set_state(self, state):
             self.state = state
 

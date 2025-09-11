@@ -3,7 +3,6 @@ from macfactory import MacFactory
 from linuxfactory import LinuxFactory
 
 
-
 def draw_ui(factory):
     button = factory.create_button()
     scrollbar = factory.create_scrollbar()
@@ -16,9 +15,9 @@ def draw_ui(factory):
 
 def main():
     """
-    System requires multiple families of related os 
+    System requires multiple families of related os -- objects
     """
-    factory = MacFactory()
+    factory = WindowsFactory()
     draw_ui(factory)
 
 

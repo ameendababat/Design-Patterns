@@ -3,9 +3,8 @@ from abc import ABC,abstractmethod
 
 class Parser(ABC):
     """Abstruct class""" 
-
-    #template method
     def parser(self, file):
+        """Template method"""
         self.load(file)
         self.validate(file)
         self.transform(file)
